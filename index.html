@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon Pokedex API</title>
+  </head>
+  <body>
+    <div class="the-big-frame">
+      <div class="top-box-search">
+        <p>PokeSearch:</p>
+        <input id="search-bar" type="text" placeholder="Search.." />
+      </div>
+
+      <div class="the-box-inside-the-big-box">
+        <div class="container">
+          <div class="item item-1">
+            <i class="fa fa-caret-left" style="font-size: 49px; color: red"></i>
+          </div>
+          <div class="item item-2">Default</div>
+          <div class="item item-3">Shiny</div>
+          <div class="item item-4">
+            <i
+              class="fa fa-caret-right"
+              style="font-size: 49px; color: red"
+            ></i>
+          </div>
+        </div>
+
+        <div class="mid-big-box-thatShowsthePokemonIcon">
+          <p1><span id="nam"></span></p1>
+          <p2>Weight: <span id="wei"></span></p2>
+          <p3>Height: <span id="hei"></span></p3>
+          <button class="theTypeButton" type="button">
+            <span id="typ"></span>
+          </button>
+        </div>
+        <div class="bottom-lines-container">
+          <div class="line line-1">Base</div>
+          <div class="line line-2">Stats</div>
+          <div class="line line-3">HP</div>
+          <div class="line line-4">40</div>
+          <div class="line line-5">Attack</div>
+          <div class="line line-6">65</div>
+          <div class="line line-7">Defense</div>
+          <div class="line line-8">95</div>
+          <div class="line line-9">Sp. Attack</div>
+          <div class="line line-10">60</div>
+          <div class="line line-11">Sp. Defense</div>
+          <div class="line line-12">45</div>
+          <div class="line line-13">Speed</div>
+          <div class="line line-14">90</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
