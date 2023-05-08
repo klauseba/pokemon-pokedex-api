@@ -18,7 +18,15 @@
     <div class="the-big-frame">
       <div class="top-box-search">
         <p>PokeSearch:</p>
-        <input id="search-bar" type="text" placeholder="Search.." />
+        <p4
+          >(type the name or number of <br />
+          the Pokemon you'd like to see) <br />
+          then press Enter
+        </p4>
+        <input id="searchBar" type="text" placeholder="Search.." />
+        <button class="randomButton" type="button" placeholder="random">
+          <span id="randombtn">get random</span>
+        </button>
       </div>
 
       <div class="the-box-inside-the-big-box">
@@ -40,7 +48,8 @@
           <p1><span id="nam"></span></p1>
           <p2>Weight: <span id="wei"></span></p2>
           <p3>Height: <span id="hei"></span></p3>
-          <button class="theTypeButton" type="button">
+          <img src="" id="pic" width="200" height="200" />
+          <button id="theTypeButton" type="button">
             <span id="typ"></span>
           </button>
         </div>
@@ -48,17 +57,17 @@
           <div class="line line-1">Base</div>
           <div class="line line-2">Stats</div>
           <div class="line line-3">HP</div>
-          <div class="line line-4">40</div>
+          <div class="line line-4"><span id="hp"></span></div>
           <div class="line line-5">Attack</div>
-          <div class="line line-6">65</div>
+          <div class="line line-6"><span id="attk"></span></div>
           <div class="line line-7">Defense</div>
-          <div class="line line-8">95</div>
+          <div class="line line-8"><span id="def"></span></div>
           <div class="line line-9">Sp. Attack</div>
-          <div class="line line-10">60</div>
+          <div class="line line-10"><span id="spAttk"></span></div>
           <div class="line line-11">Sp. Defense</div>
-          <div class="line line-12">45</div>
+          <div class="line line-12"><span id="spDef"></span></div>
           <div class="line line-13">Speed</div>
-          <div class="line line-14">90</div>
+          <div class="line line-14"><span id="spd"></span></div>
         </div>
       </div>
     </div>
