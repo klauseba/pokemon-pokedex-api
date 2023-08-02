@@ -1,21 +1,21 @@
 const searchString = document.getElementById("searchBar");
 
-searchString.addEventListener("keyup", function (e) {
-  if (e.keyCode === 13) {
-    location.reload();
+searchString.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    getPokemon(e.target.value);
   }
 });
 
 randombtn.addEventListener("click", randomPoke);
 function randomPoke() {
   searchString.value = Math.floor(Math.random() * 1008);
-  location.reload();
+   getPokemon(searchString.value);
 }
 
-let api_url = "https://pokeapi.co/api/v2/pokemon/" + `${searchString.value}`;
+let api_url = "https://pokeapi.co/api/v2/pokemon/";
 
-async function getPokemon() {
-  const response = await fetch(api_url);
+async function getPokemon(index) {
+  const response = await fetch(api_url + index);
   const data = await response.json();
 
   const { height, name, weight } = data;
@@ -130,5 +130,3 @@ async function getPokemon() {
   };
   buttonColor();
 }
-
-getPokemon();
